@@ -5,9 +5,18 @@
 
 
 body{
+    margin: 0;
     background: #1B221B;
     font-family: "Geist", sans-serif;
-    color: #1B221B;
+    color: black;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0 auto;
+    align-content: center;
 }
 
 nav{
@@ -23,13 +32,13 @@ a{
     text-decoration: none;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 300;
-    line-height: 140%;   
+    font-weight: 300;  
 }
 
 .action{
     padding: 4px 8px;
     font-size: 0.875rem;
+    line-height: 16px;
 }
 
 .action:hover {
@@ -47,3 +56,124 @@ a{
     opacity: 0.7;
 }
 
+.home{
+    background-color: #FAF8ED;
+    height: calc(100vh - 88px);
+    max-width: 1400px;
+    margin: 0 24px;
+    padding: 0 1.5rem;
+    border-radius: 16px;
+    background-image: url("./images/tree.png"),
+        url("./images/tree2.png");
+    background-repeat: no-repeat;
+    background-position: bottom, bottom;
+    background-size: 1400px 270px, 1400px 270px;
+    background-position: bottom 0px left 0px, bottom 0px left 100px;
+}
+
+@keyframes animatedBird {
+    0% {
+        background-position: bottom 0px left 0px,
+            bottom 0px left 90px;
+        transform: skew(0deg, 0deg);
+    }
+
+    50% {
+        background-position: bottom 0px left 0px,
+            bottom 0px left 98px;
+            transform: skew(0.01deg, 0deg);
+    }
+
+    100% {
+        background-position: bottom 0px left 0px,
+            bottom 0px left 90px;
+            transform: skew(0deg, 0deg);
+    }
+}
+
+.home{
+    animation: animatedBird 8s ease-in-out infinite;
+}
+
+.name-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 80px;
+    gap: 24px;
+}
+
+.big-name{
+    margin: 0;
+    color: #1B221B; 
+    text-align: center;
+    font-family: Geist;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+
+h3{
+    margin: 0;
+    color: #1B221B;
+    text-align: center;
+    font-family: Geist;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.48px;
+}
+
+.home-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 48px;
+}
+
+
+.loc-flex {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 16px;
+}
+
+h6{
+    margin: 0;
+    color: #1B221B;
+    font-family: Geist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.16px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .home {
+        margin: 0 16px;
+        border-radius: 8px;
+    }
+    .big-name{
+        font-size: 32px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .name-flex{
+        margin-top: 48px;
+        gap: 16px;
+    }
+
+}
