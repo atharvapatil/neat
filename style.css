@@ -8,7 +8,7 @@ body{
     margin: 0;
     background: #1B221B;
     font-family: "Geist", sans-serif;
-    color: black;
+    color: #1B221B;
 }
 
 .content-container{
@@ -71,23 +71,59 @@ a{
     background-position: bottom 0px left 0px, bottom 0px left 100px;
 }
 
+.bg-other {
+    background-color: #FAF8ED;
+    height: calc(100vh - 88px);
+    max-width: 1400px;
+    margin: 0 24px;
+    padding: 0 1.5rem;
+    border-radius: 16px;
+    overflow-y: scroll;
+}
+
+.center-content{
+    display: flex;
+    padding-top: 80px;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 24px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    
+}
+
+.nic-header p{
+    text-align: center;
+    opacity: 0.6;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.12px;
+}
+
 @keyframes animatedBird {
     0% {
         background-position: bottom 0px left 0px,
             bottom 0px left 90px;
-        transform: skew(0deg, 0deg);
     }
 
     50% {
         background-position: bottom 0px left 0px,
             bottom 0px left 98px;
-            transform: skew(0.01deg, 0deg);
     }
 
     100% {
         background-position: bottom 0px left 0px,
             bottom 0px left 90px;
-            transform: skew(0deg, 0deg);
     }
 }
 
@@ -121,12 +157,42 @@ h3{
     margin: 0;
     color: #1B221B;
     text-align: center;
-    font-family: Geist;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
     letter-spacing: 0.48px;
+}
+
+h5 {
+    margin: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.24px;
+}
+
+h4 {
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+}
+
+p {
+    margin: 0;
+    color: #354535;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
 }
 
 .home-flex{
@@ -137,6 +203,11 @@ h3{
     gap: 48px;
 }
 
+.faq-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
 .loc-flex {
     display: flex;
@@ -174,6 +245,14 @@ h6{
     .name-flex{
         margin-top: 48px;
         gap: 16px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    h4{
+        font-size: 16px;
     }
 
 }
