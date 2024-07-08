@@ -12,11 +12,7 @@ body{
 }
 
 .content-container{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
     margin: 0 auto;
-    align-content: center;
 }
 
 nav{
@@ -59,7 +55,6 @@ a{
 .home{
     background-color: #FAF8ED;
     height: calc(100vh - 88px);
-    max-width: 1400px;
     margin: 0 24px;
     padding: 0 1.5rem;
     border-radius: 16px;
@@ -74,18 +69,21 @@ a{
 .bg-other {
     background-color: #FAF8ED;
     height: calc(100vh - 88px);
-    max-width: 1400px;
     margin: 0 24px;
     padding: 0 1.5rem;
     border-radius: 16px;
     overflow-y: scroll;
 }
 
+.center {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
 .center-content{
     display: flex;
     padding-top: 80px;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
     gap: 24px;
     max-width: 720px;
