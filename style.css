@@ -205,6 +205,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-bottom: 5rem;
 }
 
 .loc-flex {
@@ -213,6 +214,14 @@ p {
     margin: 0 auto;
     align-items: center;
     gap: 16px;
+}
+
+hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+a{
+    color: #0284c7;
 }
 
 h6{
